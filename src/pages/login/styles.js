@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/styles";
 
-export default makeStyles(theme => ({
+export default makeStyles((theme) => ({
   container: {
     height: "100vh",
     width: "100vw",
@@ -36,6 +36,14 @@ export default makeStyles(theme => ({
     fontSize: 84,
     [theme.breakpoints.down("md")]: {
       fontSize: 48,
+    },
+  },
+  DesctypeText: {
+    color: "white",
+    fontWeight: 500,
+    fontSize: 42,
+    [theme.breakpoints.down("md")]: {
+      fontSize: 24,
     },
   },
   formContainer: {
