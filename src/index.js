@@ -8,13 +8,16 @@ import App from "./components/App";
 import * as serviceWorker from "./serviceWorker";
 import { LayoutProvider } from "./context/LayoutContext";
 import { UserProvider } from "./context/UserContext";
-
+import { QueryClient, QueryClientProvider } from "react-query";
+const queryClient = new QueryClient();
 ReactDOM.render(
   <LayoutProvider>
     <UserProvider>
       <ThemeProvider theme={Themes.default}>
-        <CssBaseline />
-        <App />
+        <QueryClientProvider client={queryClient}>
+          <CssBaseline />
+          <App />
+        </QueryClientProvider>
       </ThemeProvider>
     </UserProvider>
   </LayoutProvider>,
