@@ -97,10 +97,6 @@ For any additional information please go to our [**support forum**](https://flat
 - [React Dashboard](https://github.com/flatlogic/react-dashboard) - 🔥 React Dashboard - isomorphic admin dashboard template with GraphQL
 - [Light Blue Dashboard](https://github.com/flatlogic/light-blue-dashboard) - 💦 Free and open-source admin dashboard template built with Bootstrap
 
-## Premium themes
-
-Looking for premium themes and templates? Check out more [admin dashboard templates at flatlogic.com](https://flatlogic.com/admin-dashboards).
-
 ## License
 
 [MIT](https://github.com/flatlogic/react-material-dashboard/blob/master/LICENSE.txt).
