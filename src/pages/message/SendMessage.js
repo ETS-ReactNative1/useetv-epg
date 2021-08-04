@@ -177,7 +177,11 @@ export default function SendMessage() {
               {value.image !== null ? (
                 <img src={value.image} className={classes.img} />
               ) : null}
-              <Typography variant="body2" component="p">
+              <Typography
+                variant="body2"
+                component="p"
+                style={{ whiteSpace: "break-spaces" }}
+              >
                 {value.message}
               </Typography>
             </div>
