@@ -1,0 +1,1 @@
+docker container rm -f useetv && git pull origin  && docker build -t useetv:latest . && docker container run -d --name useetv -p 3000:3000 useetv:latest
