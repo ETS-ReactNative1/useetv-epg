@@ -7,4 +7,4 @@ RUN npm run build
 EXPOSE 3000
 
 # start app
-CMD ["npm", "start"]
+CMD ["npm", "start", "--openssl-legacy-provider start"]
