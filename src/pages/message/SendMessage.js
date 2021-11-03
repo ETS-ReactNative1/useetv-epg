@@ -62,7 +62,7 @@ export default function SendMessage() {
   });
 
   const { isLoading, data } = useQuery("repoData", () =>
-    fetch("http://157.230.47.142:9091/customer/categories").then((res) =>
+    fetch("http://45.32.115.167:9091/customer/categories").then((res) =>
       res.json(),
     ),
   );
@@ -76,7 +76,7 @@ export default function SendMessage() {
     const formData = new FormData();
     formData.append("image", tempFile[0]);
     axios
-      .post(`http://157.230.47.142:9091/file/upload-image`, formData)
+      .post(`http://45.32.115.167:9091/file/upload-image`, formData)
       .then((res) => {
         setValue({ ...value, image: res.data });
       });
@@ -91,7 +91,7 @@ export default function SendMessage() {
     };
     axios
       .post(
-        `http://157.230.47.142:9091/whatsapp/wablas/send-message-with-image`,
+        `http://45.32.115.167:9091/whatsapp/wablas/send-message-with-image`,
         withImage,
       )
       .then(() => {

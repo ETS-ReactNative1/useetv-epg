@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 export default function Tables() {
   const { isLoading, data, refetch } = useQuery("repoData", () =>
-    fetch("http://157.230.47.142:9091/notifications").then((res) => res.json()),
+    fetch("http://45.32.115.167:9091/notifications").then((res) => res.json()),
   );
   useEffect(() => {
     refetch();

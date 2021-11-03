@@ -8,7 +8,7 @@ import PageTitle from "../../components/PageTitle";
 import { useQuery } from "react-query";
 export default function Tables() {
   const { isLoading, data, refetch } = useQuery("repoData", () =>
-    fetch("http://157.230.47.142:9091/customer").then((res) => res.json()),
+    fetch("http://45.32.115.167:9091/customer").then((res) => res.json()),
   );
   useEffect(() => {
     refetch();
